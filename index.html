@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Finder App</title>
+    <meta name="description"
+      content="Find delicious recipes from around the world with our comprehensive recipe finder">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  </head>
+  <link rel="stylesheet" href="RecipeFinder.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <div class="logo">
+      <i class="fas fa-utensils"></i>
+      <span>RecipeFinder</span>
+    </div>
+
+    <div class="menu-btn" id="menu-btn" aria-label="Toggle Menu" role="button" tabindex="0">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav-menu">
+      <a href="#" data-cuisine="Indian">Indian</a>
+      <a href="#" data-cuisine="American">American</a>
+      <a href="#" data-cuisine="Chinese">Chinese</a>
+      <a href="#" data-cuisine="Mexican">Mexican</a>
+      <a href="#" data-cuisine="Italian">Italian</a>
+      <a href="#" data-cuisine="Thai">Thai</a>
+      <a href="#" data-cuisine="French">French</a>
+    </nav>
+  </div>
+
+  <h1>Recipe Finder</h1>
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search recipes by name..." autocomplete="off" />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <p id="message"></p>
+
+  <div id="recipes"></div>
+
+  <b>
+    <hr>
+  </b>
+
+
+  <!-- Featured Categories -->
+  <section class="featured-categories">
+
+    <div class="container">
+
+      <h2 class="section-title">Explore Cuisines</h2>
+
+      <div class="categories-grid">
+
+        <div class="category-card" data-cuisine="Italian">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb" alt="Italian Cuisine">
+          </div>
+          <h3>Italian</h3>
+          <p>Pasta, Pizza & More</p>
+        </div>
+
+        <div class="category-card" data-cuisine="Indian">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="Indian Cuisine">
+          </div>
+          <h3>Indian</h3>
+          <p>Spices & Flavors</p>
+        </div>
+
+        <div class="category-card" data-cuisine="Mexican">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d" alt="Mexican Cuisine">
+          </div>
+          <h3>Mexican</h3>
+          <p>Tacos & Burritos</p>
+        </div>
+
+        <div class="category-card" data-cuisine="Japanese">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Japanese Cuisine">
+          </div>
+          <h3>Japanese</h3>
+          <p>Sushi & Ramen</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <b>
+    <hr>
+  </b>
+
+  <!-- Features Section -->
+  <h2 class="section-title">Why Choose RecipeFinder?</h2>
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Quick Meals</h3>
+        <p>30-minute recipes for busy weeknights that don't compromise on taste.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Nutrition Focused</h3>
+        <p>Healthy options with detailed calorie and dietary information.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>Global Flavors</h3>
+        <p>Explore authentic dishes from cuisines around the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <b>
+    <hr>
+  </b>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 ShivamMaurya2002 Recipe-Finder-App. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="RecipeFinder.js"></script>
+
+</body>
+
+</html>
