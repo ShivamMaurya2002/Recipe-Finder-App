@@ -1,5 +1,5 @@
 // API Configuration
-const SPOONACULAR_API_KEY = '4132b0db254345f4a87f2108bcb7b885'; // Note: It's not recommended to expose API keys in frontend code
+const SPOONACULAR_API_KEY = '4132b0db254345f4a87f2108bcb7b885'; 
 const FALLBACK_TO_THEMEALDB = true;
 const MAX_RESULTS = 12;
 
@@ -70,8 +70,8 @@ searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") searchBtn.click();
 });
 
-// API FUNCTIONS
 
+// API FUNCTIONS
 // Unified Search (Spoonacular + TheMealDB fallback)
 async function fetchRecipes(query) {
     messageP.textContent = "🔍 Searching recipes...";
@@ -101,9 +101,9 @@ async function fetchRecipes(query) {
         }
     } catch (error) {
         console.log("Spoonacular search failed:", error.message);
-        // Continue to fallback
     }
 
+    
     // Fallback to TheMealDB
     if (FALLBACK_TO_THEMEALDB) {
         try {
@@ -144,6 +144,7 @@ async function fetchRecipes(query) {
     }
 }
 
+
 // Fetch Detailed Recipe
 async function fetchRecipeDetails(id, apiType) {
     try {
@@ -166,6 +167,7 @@ async function fetchRecipeDetails(id, apiType) {
         return null;
     }
 }
+
 
 // TheMealDB Cuisine Filter
 async function fetchTheMealDBRecipesByCuisine(cuisine) {
@@ -192,6 +194,7 @@ async function fetchTheMealDBRecipesByCuisine(cuisine) {
         messageP.textContent = "⚠️ Error fetching recipes.";
     }
 }
+
 
 // DISPLAY FUNCTIONS
 function displayRecipes(recipes, apiType) {
@@ -241,6 +244,7 @@ function displayRecipes(recipes, apiType) {
             `;
         }
 
+        
         // View Button
         const link = document.createElement("a");
         link.className = "recipe-link";
@@ -255,6 +259,7 @@ function displayRecipes(recipes, apiType) {
             link.textContent = recipe.strYoutube ? "Watch Video" : "View Recipe";
         }
 
+        
         // Assembly
         content.appendChild(title);
         content.appendChild(info);
