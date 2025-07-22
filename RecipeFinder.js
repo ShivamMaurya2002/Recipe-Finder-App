@@ -5,11 +5,17 @@ const MAX_RESULTS = 12;
 
 // DOM Elements
 const searchBtn = document.getElementById("search-btn");
+
 const searchInput = document.getElementById("search-input");
+
 const recipesDiv = document.getElementById("recipes");
+
 const messageP = document.getElementById("message");
+
 const menuBtn = document.getElementById("menu-btn");
+
 const navMenu = document.getElementById("nav-menu");
+
 const navLinks = navMenu.querySelectorAll("a");
 
 // Hamburger Menu Toggle
@@ -18,17 +24,22 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("open");
 });
 
+
 menuBtn.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
+    if (e.key === "Enter" || e.key === " ") 
+    {
         e.preventDefault();
         menuBtn.click();
     }
 });
 
+
 // Clear Active Nav Links
-function clearActive() {
+function clearActive() 
+{
     navLinks.forEach(link => link.classList.remove("active"));
 }
+
 
 // Cuisine Filter (TheMealDB only)
 navLinks.forEach(link => {
@@ -43,7 +54,8 @@ navLinks.forEach(link => {
         messageP.textContent = `🔍 Searching ${cuisine} recipes...`;
         recipesDiv.innerHTML = "";
 
-        if (navMenu.classList.contains("show")) {
+        if (navMenu.classList.contains("show")) 
+        {
             navMenu.classList.remove("show");
             menuBtn.classList.remove("open");
         }
@@ -52,10 +64,12 @@ navLinks.forEach(link => {
     });
 });
 
+
 // Main Search Function
 searchBtn.addEventListener("click", () => {
     const query = searchInput.value.trim();
-    if (!query) {
+    if (!query) 
+    {
         messageP.textContent = "Please enter a search term.";
         recipesDiv.innerHTML = "";
         clearActive();
@@ -66,6 +80,7 @@ searchBtn.addEventListener("click", () => {
     fetchRecipes(query);
 });
 
+
 searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") searchBtn.click();
 });
@@ -73,24 +88,28 @@ searchInput.addEventListener("keydown", (e) => {
 
 // API FUNCTIONS
 // Unified Search (Spoonacular + TheMealDB fallback)
-async function fetchRecipes(query) {
+async function fetchRecipes(query) 
+{
     messageP.textContent = "🔍 Searching recipes...";
     recipesDiv.innerHTML = "";
 
     // Try Spoonacular First
-    try {
+    try 
+    {
         const spoonacularRes = await fetch(
             `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(query)}&number=${MAX_RESULTS}&apiKey=${SPOONACULAR_API_KEY}`
         );
 
-        if (!spoonacularRes.ok) {
+        if (!spoonacularRes.ok) 
+        {
             const errorData = await spoonacularRes.json();
             throw new Error(errorData.message || "API request failed");
         }
 
         const data = await spoonacularRes.json();
 
-        if (data.results?.length > 0) {
+        if (data.results?.length > 0) 
+        {
             const detailedRecipes = await Promise.all(
                 data.results.map(recipe =>
                     fetchRecipeDetails(recipe.id, 'spoonacular')
@@ -99,21 +118,26 @@ async function fetchRecipes(query) {
             displayRecipes(detailedRecipes.filter(recipe => recipe !== null), 'spoonacular');
             return;
         }
-    } catch (error) {
+    } 
+    catch (error) 
+    {
         console.log("Spoonacular search failed:", error.message);
     }
 
     
     // Fallback to TheMealDB
-    if (FALLBACK_TO_THEMEALDB) {
-        try {
+    if (FALLBACK_TO_THEMEALDB) 
+    {
+        try 
+        {
             // Try name search first
             const mealRes = await fetch(
                 `https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(query)}`
             );
             const mealData = await mealRes.json();
 
-            if (mealData.meals) {
+            if (mealData.meals) 
+            {
                 displayRecipes(mealData.meals, 'themealdb');
                 return;
             }
@@ -124,7 +148,8 @@ async function fetchRecipes(query) {
             );
             const ingredientData = await ingredientRes.json();
 
-            if (ingredientData.meals) {
+            if (ingredientData.meals) 
+            {
                 const detailedMeals = await Promise.all(
                     ingredientData.meals.slice(0, MAX_RESULTS).map(meal =>
                         fetchRecipeDetails(meal.idMeal, 'themealdb')
@@ -135,26 +160,35 @@ async function fetchRecipes(query) {
             }
 
             messageP.textContent = "❌ No recipes found.";
-        } catch (error) {
+        } 
+        catch (error) 
+        {
             console.error("TheMealDB error:", error);
             messageP.textContent = "⚠️ Error fetching recipes.";
         }
-    } else {
+    } 
+    else 
+    {
         messageP.textContent = "❌ No recipes found.";
     }
 }
 
 
 // Fetch Detailed Recipe
-async function fetchRecipeDetails(id, apiType) {
-    try {
-        if (apiType === 'spoonacular') {
+async function fetchRecipeDetails(id, apiType) 
+{
+    try 
+    {
+        if (apiType === 'spoonacular') 
+        {
             const res = await fetch(
                 `https://api.spoonacular.com/recipes/${id}/information?apiKey=${SPOONACULAR_API_KEY}`
             );
             if (!res.ok) throw new Error("Failed to fetch details");
             return await res.json();
-        } else {
+        } 
+        else 
+        {
             const res = await fetch(
                 `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
             );
@@ -162,7 +196,9 @@ async function fetchRecipeDetails(id, apiType) {
             const data = await res.json();
             return data.meals?.[0] || null;
         }
-    } catch (error) {
+    } 
+    catch (error) 
+    {
         console.error(`Failed to fetch details from ${apiType}:`, error.message);
         return null;
     }
@@ -170,8 +206,10 @@ async function fetchRecipeDetails(id, apiType) {
 
 
 // TheMealDB Cuisine Filter
-async function fetchTheMealDBRecipesByCuisine(cuisine) {
-    try {
+async function fetchTheMealDBRecipesByCuisine(cuisine) 
+{
+    try 
+    {
         const res = await fetch(
             `https://www.themealdb.com/api/json/v1/1/filter.php?a=${encodeURIComponent(cuisine)}`
         );
@@ -179,17 +217,22 @@ async function fetchTheMealDBRecipesByCuisine(cuisine) {
         
         const data = await res.json();
 
-        if (data.meals) {
+        if (data.meals) 
+        {
             const detailedMeals = await Promise.all(
                 data.meals.slice(0, MAX_RESULTS).map(meal =>
                     fetchRecipeDetails(meal.idMeal, 'themealdb')
                 )
             );
             displayRecipes(detailedMeals.filter(meal => meal !== null), 'themealdb');
-        } else {
+        } 
+        else 
+        {
             messageP.textContent = `❌ No ${cuisine} recipes found.`;
         }
-    } catch (error) {
+    } 
+    catch (error) 
+    {
         console.error("Cuisine filter error:", error);
         messageP.textContent = "⚠️ Error fetching recipes.";
     }
@@ -197,8 +240,10 @@ async function fetchTheMealDBRecipesByCuisine(cuisine) {
 
 
 // DISPLAY FUNCTIONS
-function displayRecipes(recipes, apiType) {
-    if (!recipes?.length) {
+function displayRecipes(recipes, apiType) 
+{
+    if (!recipes?.length) 
+    {
         messageP.textContent = "❌ No recipes found.";
         return;
     }
@@ -231,19 +276,21 @@ function displayRecipes(recipes, apiType) {
         const info = document.createElement("div");
         info.className = "recipe-info";
 
-        if (apiType === 'spoonacular') {
+        if (apiType === 'spoonacular') 
+        {
             info.innerHTML = `
                 <p>Ready in: ${recipe.readyInMinutes} mins</p>
                 <p>Servings: ${recipe.servings}</p>
                 ${recipe.diets?.length ? `<p>Diets: ${recipe.diets.join(', ')}</p>` : ''}
             `;
-        } else {
+        } 
+        else 
+        {
             info.innerHTML = `
                 <p>Category: ${recipe.strCategory || 'N/A'}</p>
                 <p>Cuisine: ${recipe.strArea || 'N/A'}</p>
             `;
         }
-
         
         // View Button
         const link = document.createElement("a");
@@ -251,14 +298,16 @@ function displayRecipes(recipes, apiType) {
         link.target = "_blank";
         link.rel = "noopener noreferrer";
 
-        if (apiType === 'spoonacular') {
+        if (apiType === 'spoonacular') 
+        {
             link.href = recipe.sourceUrl || "#";
             link.textContent = "View Recipe";
-        } else {
+        } 
+        else 
+        {
             link.href = recipe.strSource || recipe.strYoutube || "#";
             link.textContent = recipe.strYoutube ? "Watch Video" : "View Recipe";
         }
-
         
         // Assembly
         content.appendChild(title);
