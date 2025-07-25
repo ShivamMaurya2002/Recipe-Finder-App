@@ -1,6 +1,8 @@
 // API Configuration
 const SPOONACULAR_API_KEY = '4132b0db254345f4a87f2108bcb7b885'; 
+
 const FALLBACK_TO_THEMEALDB = true;
+
 const MAX_RESULTS = 12;
 
 // DOM Elements
@@ -204,7 +206,6 @@ async function fetchRecipeDetails(id, apiType)
     }
 }
 
-
 // TheMealDB Cuisine Filter
 async function fetchTheMealDBRecipesByCuisine(cuisine) 
 {
@@ -237,7 +238,6 @@ async function fetchTheMealDBRecipesByCuisine(cuisine)
         messageP.textContent = "⚠️ Error fetching recipes.";
     }
 }
-
 
 // DISPLAY FUNCTIONS
 function displayRecipes(recipes, apiType) 
