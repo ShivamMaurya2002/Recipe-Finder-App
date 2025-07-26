@@ -95,6 +95,7 @@ async function fetchRecipes(query)
     messageP.textContent = "🔍 Searching recipes...";
     recipesDiv.innerHTML = "";
 
+    
     // Try Spoonacular First
     try 
     {
@@ -143,6 +144,7 @@ async function fetchRecipes(query)
                 displayRecipes(mealData.meals, 'themealdb');
                 return;
             }
+            
 
             // Try ingredient search
             const ingredientRes = await fetch(
@@ -239,6 +241,7 @@ async function fetchTheMealDBRecipesByCuisine(cuisine)
     }
 }
 
+
 // DISPLAY FUNCTIONS
 function displayRecipes(recipes, apiType) 
 {
@@ -308,6 +311,7 @@ function displayRecipes(recipes, apiType)
             link.href = recipe.strSource || recipe.strYoutube || "#";
             link.textContent = recipe.strYoutube ? "Watch Video" : "View Recipe";
         }
+
         
         // Assembly
         content.appendChild(title);
