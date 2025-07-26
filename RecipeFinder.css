@@ -3,35 +3,16 @@
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #031438; display: flex; flex-direction: column; }
 
 /* Navbar Container */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background: linear-gradient(90deg, #112147, #0b1e47);
-    padding: 20px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+.navbar { display: flex; justify-content: space-between; align-items: center; flex-direction: row; background: linear-gradient(90deg, #112147, #0b1e47); padding: 20px 20px; 
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); position: sticky; top: 0; z-index: 10; }
 
 /* Logo Section (Right on Desktop) */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0ece85;
-}
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; color: #0ece85; }
 
 .logo i { color: #0ece85; font-size: 1.2rem; padding-top: 5px; }
 
 /* Hamburger Menu Button */
-.menu-btn {
-    display: none;
-    background-color: transparent;
+.menu-btn { display: none; background-color: transparent;
     flex-direction: column;
     cursor: pointer;
     width: 30px;
@@ -61,13 +42,7 @@ nav a {
 nav a:hover,
 nav a.active { background: #042042; box-shadow: 1px 0 8px rgba(172, 224, 197, 0.58); }
 
-h1 {
-    text-align: center;
-    margin: 20px;
-    font-size: 3rem;
-    color: #0ece85;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
+h1 { text-align: center; margin: 20px; font-size: 3rem; color: #0ece85; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
 
 #search-container { display: flex; justify-content: center; flex-wrap: wrap; margin: 20px; }
 
@@ -98,22 +73,10 @@ h1 {
 #search-btn:hover { box-shadow: 0 0 8px #22d892; }
 
 /* Search Error Message */
-#message {
-    text-align: center;
-    margin: 15px 0;
-    color: #c62828;
-    font-weight: bold;
-    min-height: 24px;
-}
+#message { text-align: center; margin: 15px 0; color: #c62828; font-weight: bold; min-height: 24px; }
 
 /* Recipes Grid */
-#recipes {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    padding-bottom: 40px;
-}
+#recipes { padding: 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding-bottom: 40px; }
 
 /* Recipe Card Container */
 .recipe-card {
@@ -158,32 +121,13 @@ h1 {
 .recipe-link:hover { box-shadow: 0 0 8px #0ece85; }
 
 /* Section Title */
-.section-title {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 2rem;
-    color: #0ece85;
-    position: relative;
-}
+.section-title { text-align: center; margin: 40px 0; font-size: 2rem; color: #0ece85; position: relative; }
 
 /* Categories Grid */
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 20px;
-    margin-bottom: 50px;
-}
+.categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 20px; margin-bottom: 50px; }
 
 /* Category Card */
-.category-card {
-    background-color: #09254a;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid #0ece85;
-    transition: transform 0.5s ease;
-}
+.category-card { background-color: #09254a; border-radius: 10px; overflow: hidden; cursor: pointer; border: 1px solid #0ece85; transition: transform 0.5s ease; }
 
 .category-card:hover {  transform: translateY(-2px);  box-shadow: 0 0 10px #0ece85; }
 
@@ -208,14 +152,7 @@ h1 {
 .features .container { display: grid; max-width: 1200px; width: 100%; padding: 0 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
 /* Individual Feature Card */
-.feature {
-    text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #09254a;
-    border: 1px solid #0ece85;
-    transition: all 0.5s ease;
-}
+.feature { text-align: center; padding: 30px; border-radius: 10px; background-color: #09254a; border: 1px solid #0ece85; transition: all 0.5s ease; }
 
 /* Hover Effect */
 .feature:hover { transform: translateY(-2px); box-shadow: 0 0 10px #0ece85; }
@@ -232,14 +169,7 @@ h1 {
 /* Footer */
 .footer { background-color: transparent; color: #fff; }
 
-.footer-bottom {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #444;
-    color: #0ece85;
-    font-size: 1rem;
-    font-weight: 600;
-}
+.footer-bottom { text-align: center; padding: 30px; border-top: 1px solid #444; color: #0ece85; font-size: 1rem; font-weight: 600; }
 
 /* *************************************************************************** Responsiveness Code **********************************************************************  */
 
@@ -281,16 +211,7 @@ h1 {
 @media (max-width: 768px) {
     .menu-btn { display: flex; }
 
-    nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        background-color: #0f172a;
-        padding: 20px;
-    }
+    nav { display: none; position: absolute; top: 60px; left: 0; flex-direction: column; width: 100%; background-color: #0f172a; padding: 20px; }
 
     nav.show { display: flex; }
 
