@@ -66,7 +66,6 @@ navLinks.forEach(link => {
     });
 });
 
-
 // Main Search Function
 searchBtn.addEventListener("click", () => {
     const query = searchInput.value.trim();
