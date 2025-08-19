@@ -65,12 +65,12 @@
 
 <p align="center">
   
-Recipe-Finder-App/
-│── index.html
-│── css/
-│   └── style.css
-│── js/
-│   └── script.js
-│── assets/
-│   └── (images/screenshots)
+Recipe-Finder-App/</br>
+│── index.html</br>
+│── css/</br>
+│   └── style.css</br>
+│── js/</br>
+│   └── script.js</br>
+│── assets/<br>
+│   └── (images/screenshots)<br>
 └── README.md
