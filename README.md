@@ -61,7 +61,7 @@
 
 ---
 
-<h2 align="center">📂 Project Structure</h2>
+<h2>📂 Project Structure</h2>
   
 Recipe-Finder-App/</br>
 ├── index.html</br>├── css/</br>
