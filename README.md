@@ -24,12 +24,12 @@
 <h2 align="center">📖 About</h2>
 
 <p align="center">
-  Recipe Finder is a <b>frontend web app</b> to search and explore recipes from multiple cuisines like 
+  Recipe Finder is a <b>frontend web app</b> to search and explore recipes from multiple cuisines like <br>
   <b>Indian 🇮🇳, Italian 🇮🇹, Mexican 🇲🇽, Japanese 🇯🇵</b>.
 </p>
 
 <p align="center">
-  ✅ Quick Meals (30-min recipes) · 🥦 Nutrition-focused · 🌐 Global Flavors · 📱 100% Responsive
+  ✅ Quick Meals (30-min recipes) <br>· 🥦 Nutrition-focused <br>· 🌐 Global Flavors <br>· 📱 100% Responsive
 </p>
 
 ---
