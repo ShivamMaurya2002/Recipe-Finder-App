@@ -39,6 +39,7 @@ It’s a lightweight **frontend-only web app** that focuses on:
 - 🖼️ **Recipe cards** with images & info  
 - ✨ **Hover effects** + smooth styling  
 
+
 ### ⚙️ Backend
 - 🚫 None (static site)  
 - 🔮 *Future*: Node.js/Express backend with real API integration  
