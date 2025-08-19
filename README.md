@@ -1,12 +1,10 @@
 <!-- Banner -->
-<p align="center">
-  <div>
+  <div align="center">
   <img src="assets/banner.png" alt="Recipe Finder Banner" width="800">
   </div>
-  <div>
+  <div align="center">
   <img src="assets/banner.png" alt="Recipe Finder Banner" width="800">
   </div>
-</p>
 
 <h1 align="center">🍴 Recipe Finder App</h1>
 <p align="center">
