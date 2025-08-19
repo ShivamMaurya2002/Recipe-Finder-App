@@ -1,7 +1,3 @@
-<!-- Banner -->
-  <div align="center">
-  <img src="assets/Home1.png" alt="Recipe Finder Banner" width="800">
-  </div>
 
 <h1 align="center">🍴 Recipe Finder App</h1>
 <p align="center">
@@ -23,7 +19,13 @@
   <img src="https://img.shields.io/badge/Made%20With-❤️ Love-FF1493?style=for-the-badge" alt="Made with Love">
 </p>
 
+---
 
+<!-- Banner -->
+  <div align="center">
+  <img src="assets/Home1.png" alt="Recipe Finder Banner" width="800">
+  </div>
+  
 ---
 
 <h2 align="center">📖 About</h2>
