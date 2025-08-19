@@ -62,8 +62,6 @@
 ---
 
 <h2 align="center">📂 Project Structure</h2>
-
-<div align="center">
   
 Recipe-Finder-App/</br>
 ├── index.html</br>├── css/</br>
@@ -74,6 +72,5 @@ Recipe-Finder-App/</br>
 │   └── (images/screenshots)</br>
 └── README.md
 
-</div> 
 
 
