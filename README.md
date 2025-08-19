@@ -64,15 +64,16 @@
 <h2 align="center">📂 Project Structure</h2>
 
 <div align="center">
-  
-Recipe-Finder-App/<br>
-│── index.html<br>
-│── css/<br>
-│   └── style.css<br>
-│── js/<br>
-│   └── script.js<br>
-│── assets/<br>
-│   └── (images/screenshots)<br>
+<pre>
+Recipe-Finder-App/
+│── index.html
+│── css/
+│   └── style.css
+│── js/
+│   └── script.js
+│── assets/
+│   └── (images/screenshots)
 └── README.md
-
+</pre>
 </div>
+
