@@ -69,7 +69,7 @@ Recipe-Finder-App/</br>
 ├── index.html</br>
 ├── css/</br>
 │   └── style.css</br>
-├── js//br>
+├── js/</br>
 │   └── script.js</br>
 ├── assets/</br>
 │   └── (images/screenshots)</br>
