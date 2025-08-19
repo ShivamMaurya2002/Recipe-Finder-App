@@ -47,6 +47,7 @@
 <h2 align="center">🚀 Features</h2>
 
 <p align="center">
+  
 | 🌟 Feature | 💡 Description |
 |------------|----------------|
 | 🔎 Search Recipes | Search by dish name / keyword |
@@ -55,6 +56,7 @@
 | 📱 Responsive UI | Mobile-first design |
 | ⚡ Quick Meals | Recipes < 30 minutes |
 | 🥗 Nutrition Focused | Calorie/diet details |
+  
 </p>
 
 ---
