@@ -66,14 +66,15 @@
 <div align="center">
 <pre>
 Recipe-Finder-App/
-│── index.html
-│── css/
+├── index.html
+├── css/
 │   └── style.css
-│── js/
+├── js/
 │   └── script.js
-│── assets/
+├── assets/
 │   └── (images/screenshots)
 └── README.md
 </pre>
 </div>
+
 
