@@ -22,7 +22,7 @@
 💡 Key highlights:
 - ⏳ Quick meal options (30-min recipes)  
 - 🥦 Nutrition-focused dishes  
-- 🌐 Explore Global Flavors  
+- 🌐 Explore Global Flavors 
 - 📱 100% Responsive Design  
 
 🔗 **Live Site:** [Recipe Finder App](https://shivammaurya2002.github.io/Recipe-Finder-App/)
