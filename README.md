@@ -1,9 +1,9 @@
 <!-- Banner -->
   <div align="center">
-  <img src="assets/banner.png" alt="Recipe Finder Banner" width="800">
+  <img src="assets/Home.png" alt="Recipe Finder Banner" width="800">
   </div>
   <div align="center">
-  <img src="assets/banner.png" alt="Recipe Finder Banner" width="800">
+  <img src="assets/Chicken.png" alt="Recipe Finder Banner" width="800">
   </div>
 
 <h1 align="center">🍴 Recipe Finder App</h1>
