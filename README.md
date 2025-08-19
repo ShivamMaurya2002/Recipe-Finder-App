@@ -9,14 +9,20 @@
 </p>
 
 <p align="center">
-  <a href="https://shivammaurya2002.github.io/Recipe-Finder-App/">
-    <img src="https://img.shields.io/badge/🚀 Live%20Demo-0078D4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
+  <!-- Live Demo -->
+  <a href="https://shivammaurya2002.github.io/Recipe-Finder-App/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀 Live%20Demo-1E90FF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
-  <a href="https://github.com/ShivamMaurya2002/Recipe-Finder-App">
-    <img src="https://img.shields.io/badge/GitHub Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
+  &nbsp;
+  <!-- GitHub Repo -->
+  <a href="https://github.com/ShivamMaurya2002/Recipe-Finder-App" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
   </a>
-  <img src="https://img.shields.io/badge/Made%20With-❤️ Love-FF4088?style=for-the-badge">
+  &nbsp;
+  <!-- Made With Love -->
+  <img src="https://img.shields.io/badge/Made%20With-❤️ Love-FF1493?style=for-the-badge" alt="Made with Love">
 </p>
+
 
 ---
 
