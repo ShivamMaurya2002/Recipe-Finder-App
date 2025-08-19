@@ -47,7 +47,6 @@ It’s a lightweight **frontend-only web app** that focuses on:
 ---
 
 ## 📂 Project Structure
-```bash
 Recipe-Finder-App/
 │── index.html
 │── css/
