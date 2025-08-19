@@ -1,27 +1,37 @@
+<!-- Banner -->
 <h1 align="center">🍴 Recipe Finder App</h1>
+<p align="center">
+  <i>Discover recipes across cuisines 🌍 | Quick Meals ⚡ | Nutrition Focused 🥗</i>
+</p>
 
 <p align="center">
   <a href="https://shivammaurya2002.github.io/Recipe-Finder-App/">
-    <img src="https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge&logo=google-chrome" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=google-chrome" alt="Live Demo">
   </a>
   <a href="https://github.com/ShivamMaurya2002/Recipe-Finder-App">
     <img src="https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github" alt="GitHub Repo">
   </a>
+  <img src="https://img.shields.io/badge/Made%20With-❤️-red?style=for-the-badge">
 </p>
 
 ---
 
-## 📖 About
-✨ **Recipe Finder App** helps users **discover recipes by cuisine, ingredient, or keyword**.  
-It’s a lightweight **frontend-only web app** that focuses on:  
-✅ Quick Meals (under 30 minutes)  
-✅ Nutrition-centric recipes  
-✅ Global flavors (🇮🇳 Indian, 🇮🇹 Italian, 🇲🇽 Mexican, 🇯🇵 Japanese)  
+## 📖 About the Project
+✨ Recipe Finder is a **frontend web app** to search and explore recipes from multiple cuisines like **Indian 🇮🇳, Italian 🇮🇹, Mexican 🇲🇽, Japanese 🇯🇵**.  
+
+💡 Key highlights:
+- ⏳ Quick meal options (30-min recipes)  
+- 🥦 Nutrition-focused dishes  
+- 🌐 Explore Global Flavors  
+- 📱 100% Responsive Design  
+
+🔗 **Live Site:** [Recipe Finder App](https://shivammaurya2002.github.io/Recipe-Finder-App/)
 
 ---
 
-## 🛠️ Technologies Used
-<p>
+## 🛠️ Tech Stack
+
+<p align="center">
   <img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black">
@@ -32,29 +42,24 @@ It’s a lightweight **frontend-only web app** that focuses on:
 
 ## 🚀 Features
 
-### 🌐 Frontend
-- 🎨 **Responsive UI** (works on desktop + mobile)  
-- 🔎 **Search bar** to find recipes  
-- 🍛 **Cuisine filters** (Indian, Italian, Mexican, Japanese)  
-- 🖼️ **Recipe cards** with images & info  
-- ✨ **Hover effects** + smooth styling  
-
-
-### ⚙️ Backend
-- 🚫 None (static site)  
-- 🔮 *Future*: Node.js/Express backend with real API integration  
+| 🌟 Feature                | 💡 Description |
+|----------------------------|----------------|
+| 🔎 Search Recipes          | Search by dish name / keyword |
+| 🍛 Cuisine Filters          | Filter recipes (Indian, Italian, Mexican, Japanese) |
+| 🖼️ Recipe Cards             | Image, title & info displayed |
+| 📱 Responsive UI           | Mobile-first design |
+| ⚡ Quick Meals             | Recipes < 30 minutes |
+| 🥗 Nutrition-Focused       | Calorie/diet details (can be extended) |
 
 ---
 
 ## 📂 Project Structure
-Recipe-Finder-App/</br>
-│── index.html</br>
-│── css/</br>
-│   └── style.css</br>
-│── js/</br>
-│   └── script.js</br>
-│── assets/</br>
-│   └── (images/screenshots)</br>
+```bash
+Recipe-Finder-App/
+│── index.html         # Main HTML page
+│── css/
+│   └── style.css      # Styles
+│── js/
+│   └── script.js      # Logic & interactivity
+│── assets/            # Images/screenshots
 └── README.md
-
-
