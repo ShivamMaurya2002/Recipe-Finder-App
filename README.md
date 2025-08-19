@@ -21,13 +21,6 @@
 
 ---
 
-<!-- Banner -->
-  <div align="center">
-  <img src="assets/Home1.png" alt="Recipe Finder Banner" width="800">
-  </div>
-  
----
-
 <h2 align="center">📖 About</h2>
 
 <p align="center">
@@ -39,6 +32,13 @@
   ✅ Quick Meals (30-min recipes) · 🥦 Nutrition-focused · 🌐 Global Flavors · 📱 100% Responsive
 </p>
 
+---
+
+<!-- Banner -->
+  <div align="center">
+  <img src="assets/Home1.png" alt="Recipe Finder Banner" width="800">
+  </div>
+  
 ---
 
 <h2 align="center">🛠️ Tech Stack</h2>
