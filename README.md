@@ -10,12 +10,12 @@
 
 <p align="center">
   <a href="https://shivammaurya2002.github.io/Recipe-Finder-App/">
-    <img src="https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge&logo=google-chrome" alt="Live Demo">
+    <img src="https://img.shields.io/badge/🚀 Live%20Demo-0078D4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
   <a href="https://github.com/ShivamMaurya2002/Recipe-Finder-App">
-    <img src="https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github" alt="GitHub Repo">
+    <img src="https://img.shields.io/badge/GitHub Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
   </a>
-  <img src="https://img.shields.io/badge/Made%20With-❤️-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Made%20With-❤️ Love-FF4088?style=for-the-badge">
 </p>
 
 ---
