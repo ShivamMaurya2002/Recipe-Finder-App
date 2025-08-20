@@ -78,6 +78,3 @@ Recipe-Finder-App/</br>
 ├── assets/</br>
 │   └── (images/screenshots)</br>
 └── README.md
-
-
-
