@@ -28,7 +28,7 @@
   <b>Indian 🇮🇳, Italian 🇮🇹, Mexican 🇲🇽, Japanese 🇯🇵</b>.
 </p>
 
-<p align="center">
+<p>
   ✅ Quick Meals (30-min recipes) <br>· 🥦 Nutrition-focused <br>· 🌐 Global Flavors <br>· 📱 100% Responsive
 </p>
 
