@@ -23,7 +23,7 @@
 <h2 align="center">📖 About</h2>
 
 <p align="center">
-  Recipe Finder is a <b>frontend web app</b> to search and explore recipes from multiple cuisines like <br>
+  Recipe Finder App is a <b>frontend web app</b> to search and explore recipes from multiple cuisines like <br>
   <b>Indian 🇮🇳, Italian 🇮🇹, Mexican 🇲🇽, Japanese 🇯🇵</b>.
 </p>
 
