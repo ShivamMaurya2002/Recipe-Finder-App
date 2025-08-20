@@ -1,4 +1,3 @@
-
 <h1 align="center">🍴 Recipe Finder App</h1>
 <p align="center">
   <i>Discover recipes across cuisines 🌍 | Quick Meals ⚡ | Nutrition Focused 🥗</i>
