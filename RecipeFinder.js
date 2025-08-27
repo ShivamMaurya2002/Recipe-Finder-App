@@ -176,7 +176,6 @@ async function fetchRecipes(query)
     }
 }
 
-
 // Fetch Detailed Recipe
 async function fetchRecipeDetails(id, apiType) 
 {
@@ -239,7 +238,6 @@ async function fetchTheMealDBRecipesByCuisine(cuisine)
         messageP.textContent = "⚠️ Error fetching recipes.";
     }
 }
-
 
 // DISPLAY FUNCTIONS
 function displayRecipes(recipes, apiType) 
@@ -311,7 +309,6 @@ function displayRecipes(recipes, apiType)
             link.textContent = recipe.strYoutube ? "Watch Video" : "View Recipe";
         }
 
-        
         // Assembly
         content.appendChild(title);
         content.appendChild(info);
@@ -321,5 +318,3 @@ function displayRecipes(recipes, apiType)
         recipesDiv.appendChild(card);
     });
 }
-
-
