@@ -1,3 +1,4 @@
+
 // API Configuration
 const SPOONACULAR_API_KEY = '4132b0db254345f4a87f2108bcb7b885'; 
 
@@ -321,3 +322,4 @@ function displayRecipes(recipes, apiType)
         recipesDiv.appendChild(card);
     });
 }
+
